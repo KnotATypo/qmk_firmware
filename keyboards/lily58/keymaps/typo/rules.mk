@@ -18,3 +18,5 @@ SRC +=  ./lib/layer_state_reader.c \
         # ./lib/timelogger.c \
         # ./lib/host_led_state_reader.c \
         # ./lib/rgb_state_reader.c \
+
+BOOTLOADER=atmel-dfu
