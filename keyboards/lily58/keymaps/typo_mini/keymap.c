@@ -150,6 +150,9 @@ bool oled_task_user(void) {
 #ifdef TAP_DANCE_ENABLE
 //Tap Dance Definitions
 tap_dance_action_t tap_dance_actions[] = {
+    // Tap once for shift, twice for Caps Lock
+    [TD_SHIFT_CAPS]  = ACTION_TAP_DANCE_DOUBLE(KC_RSFT, KC_CAPS)
+// Other declarations would go here, separated by commas, if you have them
 };
 #endif // TAP_DANCE_ENABLE
 
